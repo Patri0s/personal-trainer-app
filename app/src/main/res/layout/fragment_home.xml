@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
+    tools:context=".ui.home.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="15dp">
+
+        <TextView
+            android:id="@+id/welcomeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="@string/home_title"
+            android:textAlignment="center"
+            android:textColor="?colorPrimary"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/feelingSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="?attr/colorSecondaryContainer"
+            app:cardCornerRadius="15dp"
+            app:layout_constraintTop_toBottomOf="@id/welcomeText">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/cvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="20dp"
+                    android:text="@string/feeling_section_title"
+                    android:textSize="22sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/cvTitleBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="20dp"
+                    android:text="@string/feeling_section_title_bold"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/cvTitle"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/characterReady"
+                    android:layout_width="110dp"
+                    android:layout_height="160dp"
+                    android:src="@drawable/character_ready"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/cvTitle" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnReady"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:backgroundTint="?colorOnSecondary"
+                    android:text="@string/feeling_ready"
+                    android:textColor="?colorOnSurface"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@id/characterReady"
+                    app:layout_constraintEnd_toEndOf="@id/characterReady"
+                    app:layout_constraintStart_toStartOf="@id/characterReady"
+                    app:layout_constraintTop_toTopOf="@id/characterReady"
+                    app:layout_constraintVertical_bias="0.8"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/characterNormal"
+                    android:layout_width="110dp"
+                    android:layout_height="160dp"
+                    android:src="@drawable/character_normal"
+                    app:layout_constraintEnd_toStartOf="@+id/characterTired"
+                    app:layout_constraintStart_toEndOf="@id/characterReady"
+                    app:layout_constraintTop_toBottomOf="@id/cvTitle" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnNormal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:backgroundTint="?colorOnSecondary"
+                    android:text="@string/feeling_normal"
+                    android:textColor="?colorOnSurface"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@id/characterNormal"
+                    app:layout_constraintEnd_toEndOf="@id/characterNormal"
+                    app:layout_constraintStart_toStartOf="@id/characterNormal"
+                    app:layout_constraintTop_toTopOf="@id/characterNormal"
+                    app:layout_constraintVertical_bias="0.8"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/characterTired"
+                    android:layout_width="110dp"
+                    android:layout_height="160dp"
+                    android:src="@drawable/character_tired"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/cvTitle" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnTired"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:backgroundTint="?colorOnSecondary"
+                    android:text="@string/feeling_tired"
+                    android:textColor="?colorOnSurface"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@id/characterTired"
+                    app:layout_constraintEnd_toEndOf="@id/characterTired"
+                    app:layout_constraintStart_toStartOf="@id/characterTired"
+                    app:layout_constraintTop_toTopOf="@id/characterTired"
+                    app:layout_constraintVertical_bias="0.8"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/exerciseSectionTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingVertical="15dp"
+            android:text="@string/exercise_section_title"
+            android:textSize="22sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/feelingSection" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/exerciseSectionRv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="80dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/exerciseSectionTitle"
+            tools:listitem="@layout/item_exercise_section" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
