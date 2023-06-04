@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_marginBottom="10dp"
+    android:backgroundTint="#000"
+    app:cardCornerRadius="20dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/sectionImg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.55"
+            android:contentDescription="@string/exercise_section_image_content_desc"
+            android:scaleType="centerCrop"
+            android:src="@drawable/section_1_img" />
+
+        <TextView
+            android:id="@+id/sectionTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textAllCaps="true"
+            android:textColor="#FFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/section_1_title" />
+
+        <ImageView
+            android:id="@+id/sectionTrainingsIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/exercise_section_trophy_content_desc"
+            android:paddingStart="10dp"
+            android:paddingEnd="0dp"
+            android:src="@drawable/section_trainings_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sectionTitle" />
+
+        <TextView
+            android:id="@+id/sectionTrainingsDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:gravity="center"
+            android:textColor="#FFF"
+            app:layout_constraintStart_toEndOf="@id/sectionTrainingsIcon"
+            app:layout_constraintTop_toBottomOf="@id/sectionTitle"
+            tools:text="17 trainings" />
+
+        <ImageView
+            android:id="@+id/sectionCaloriesIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/exercise_section_fire_content_desc"
+            android:paddingStart="10dp"
+            android:paddingEnd="0dp"
+            android:src="@drawable/section_calories_icon"
+            app:layout_constraintStart_toEndOf="@id/sectionTrainingsDesc"
+            app:layout_constraintTop_toBottomOf="@id/sectionTitle" />
+
+        <TextView
+            android:id="@+id/sectionCaloriesDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:gravity="center"
+            android:textColor="#FFF"
+            app:layout_constraintStart_toEndOf="@id/sectionCaloriesIcon"
+            app:layout_constraintTop_toBottomOf="@id/sectionTitle"
+            tools:text="45" />
+
+        <ImageView
+            android:id="@+id/sectionTimeIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/exercise_section_timer_content_desc"
+            android:paddingStart="10dp"
+            android:paddingEnd="0dp"
+            android:src="@drawable/section_time_icon"
+            app:layout_constraintStart_toEndOf="@id/sectionCaloriesDesc"
+            app:layout_constraintTop_toBottomOf="@id/sectionTitle" />
+
+        <TextView
+            android:id="@+id/sectionTimeDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:gravity="center"
+            android:textColor="#FFF"
+            app:layout_constraintStart_toEndOf="@id/sectionTimeIcon"
+            app:layout_constraintTop_toBottomOf="@id/sectionTitle"
+            tools:text="10 min" />
+
+        <Button
+            android:id="@+id/sectionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="#FFF"
+            android:text="@string/exercise_section_start_button"
+            android:textColor="#111"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sectionTrainingsIcon" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,4 +1,20 @@
 <resources>
     <string name="app_name">WorkoutApp</string>
     <string name="app_icon_desc">App icon</string>
+    <string name="nav_home">Exercise plans</string>
+    <string name="nav_summary">Summary</string>
+    <string name="nav_settings">Settings</string>
+    <string name="home_title">Good Morning!</string>
+    <string name="feeling_section_title">How are you</string>
+    <string name="feeling_section_title_bold">" feeling today?"</string>
+    <string name="feeling_ready">Ready</string>
+    <string name="feeling_normal">Normal</string>
+    <string name="feeling_tired">Tired</string>
+    <string name="section_1_title">ABS</string>
+    <string name="exercise_section_title">Exercise sections</string>
+    <string name="exercise_section_start_button">Start</string>
+    <string name="exercise_section_image_content_desc">Section Image</string>
+    <string name="exercise_section_trophy_content_desc">White trophy icon</string>
+    <string name="exercise_section_fire_content_desc">White fire icon</string>
+    <string name="exercise_section_timer_content_desc">White timer icon</string>
 </resources>
