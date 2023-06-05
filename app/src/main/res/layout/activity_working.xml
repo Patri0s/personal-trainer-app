@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorSurface"
+    tools:context=".WorkingActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title=" " />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/upcomingGif"
+        android:layout_width="match_parent"
+        android:layout_height="390dp"
+        android:layout_marginHorizontal="50dp"
+        android:src="@drawable/exercise_arm_swings"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <TextView
+        android:id="@+id/readyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/working_get_ready"
+        android:textAllCaps="true"
+        android:textColor="?colorOnSurface"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/upcomingExerciseName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/upcomingExerciseName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="?colorOnSurface"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/restTimer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Mountain Climber" />
+
+    <ImageView
+        android:id="@+id/exerciseInfoIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:contentDescription="@string/working_icon_info"
+        android:src="@drawable/working_info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/upcomingExerciseName" />
+
+    <ImageView
+        android:id="@+id/pauseIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:contentDescription="@string/working_icon_pause"
+        android:src="@drawable/working_pause"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/upcomingExerciseName" />
+
+    <ImageView
+        android:id="@+id/resumeIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:contentDescription="@string/working_icon_resume"
+        android:src="@drawable/working_resume"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/upcomingExerciseName" />
+
+    <FrameLayout
+        android:id="@+id/restTimer"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toTopOf="@id/rvExerciseStatus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ProgressBar
+            android:id="@+id/restProgressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:indeterminate="false"
+            android:max="10"
+            android:progress="100"
+            android:progressDrawable="@drawable/circular_progress_bar"
+            android:rotation="-90" />
+
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tvTimer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="?colorOnSurface"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/exerciseGifWorkingView"
+        android:layout_width="match_parent"
+        android:layout_height="390dp"
+        android:layout_marginHorizontal="50dp"
+        android:src="@drawable/exercise_arm_swings"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <TextView
+        android:id="@+id/workText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/working_work"
+        android:textAllCaps="true"
+        android:textColor="?colorOnSurface"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/upcomingExerciseName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/exerciseNameWorkingView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="?colorOnSurface"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/restTimer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/exerciseTimer"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/rvExerciseStatus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible">
+
+        <ProgressBar
+            android:id="@+id/progressBarExercise"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:indeterminate="false"
+            android:max="30"
+            android:progress="300"
+            android:progressDrawable="@drawable/circular_progress_bar"
+            android:rotation="-90" />
+
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tvTimerExercise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="?colorOnSurface"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvExerciseStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:spanCount="12"
+        tools:itemCount="15"
+        tools:listitem="@layout/item_exercise_status"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -72,6 +72,11 @@ class SectionExerciseActivity : AppCompatActivity() {
         binding?.sectionExercisesRv?.layoutManager =
             LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
         binding?.sectionExercisesRv?.adapter = exerciseAdapter
+        binding?.sectionExercisesButton?.setOnClickListener {
+            val intent = Intent(this, WorkingActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
     }
 
     override fun onDestroy() {
