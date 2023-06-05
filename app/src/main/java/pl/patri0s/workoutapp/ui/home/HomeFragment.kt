@@ -7,8 +7,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.LinearLayoutManager
 import pl.patri0s.workoutapp.R
 import pl.patri0s.workoutapp.databinding.FragmentHomeBinding
+import pl.patri0s.workoutapp.exerciseSection.SectionAdapter
+import pl.patri0s.workoutapp.exerciseSection.SectionList
 
 class HomeFragment : Fragment() {
 
@@ -31,6 +34,11 @@ class HomeFragment : Fragment() {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
         setFeelingButtons()
+
+        val sectionAdapter = SectionAdapter(SectionList.sectionsList)
+        binding.exerciseSectionRv.layoutManager =
+            LinearLayoutManager(this.context, LinearLayoutManager.VERTICAL, false)
+        binding.exerciseSectionRv.adapter = sectionAdapter
 
         activity.supportActionBar?.subtitle = getString(R.string.nav_home)
 
