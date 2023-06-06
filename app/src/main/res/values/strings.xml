@@ -59,4 +59,14 @@
     <string name="exercise_knee_push_ups_desc">Place your knees on the floor, palms below your shoulders and cross your feet.\n\nKeeping your back straight, start bending your elbows until your chest almost touches the floor. Stop and return to the starting position. Repeat until the series is complete.</string>
     <string name="exercise_arm_swings_desc">Stand straight with your knees slightly bent, feet shoulder-width apart and arms extended horizontally to the sides.\n\nCross your arms in front, then quickly pull them back as far as possible. Repeat this movement back and forth until the series is complete.</string>
     <string name="exercise_cat_cow_pose_desc">Start in forward support, with your knees under your hips and your hands exactly under your shoulders.\n\nInhaling, push your belly down, shoulders back, and head up.\n\nMaking an exhalation, push your back up and bend your head down. Repeat the exercise.</string>
+    <string name="working_half_time">Half time remaining</string>
+    <string name="working_get_ready">Get Ready</string>
+    <string name="working_work">Work!</string>
+    <string name="working_icon_info">Exercise info icon</string>
+    <string name="working_icon_pause">Exercise pause icon</string>
+    <string name="working_icon_resume">Exercise resume icon</string>
+    <string name="back_dialog_title">Are you sure?</string>
+    <string name="back_dialog_desc">This will stop your workout. You\'ve come this far, are you sure you want to quit?</string>
+    <string name="back_dialog_yes">Yes</string>
+    <string name="back_dialog_no">No</string>
 </resources>
