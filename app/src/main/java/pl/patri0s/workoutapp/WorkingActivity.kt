@@ -232,8 +232,8 @@ class WorkingActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
                         setupRestView()
                     } else {
                         finish()
-//                        val intent = Intent(this@WorkingActivity, FinishActivity::class.java)
-//                        startActivity(intent)
+                        val intent = Intent(this@WorkingActivity, FinishActivity::class.java)
+                        startActivity(intent)
                     }
                 }
             }.start()
