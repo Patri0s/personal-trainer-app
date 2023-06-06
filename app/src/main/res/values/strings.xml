@@ -69,4 +69,8 @@
     <string name="back_dialog_desc">This will stop your workout. You\'ve come this far, are you sure you want to quit?</string>
     <string name="back_dialog_yes">Yes</string>
     <string name="back_dialog_no">No</string>
+    <string name="trophy_desc">Trophy icon</string>
+    <string name="finish_congratulations">Congratulations!</string>
+    <string name="finish_congrats_desc">You have completed all the exercises</string>
+    <string name="finish_button">Finish</string>
 </resources>

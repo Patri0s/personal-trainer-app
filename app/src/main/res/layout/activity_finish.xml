@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/finish_background"
+    android:orientation="vertical"
+    android:padding="30dp">
+
+    <ImageView
+        android:id="@+id/ivTrophy"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:contentDescription="@string/trophy_desc"
+        android:src="@drawable/finish_trophy"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/tvCongratulations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:gravity="center"
+        android:text="@string/finish_congratulations"
+        android:textColor="#FFF"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvScore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:gravity="center"
+        android:text="@string/finish_congrats_desc"
+        android:textColor="#DDD"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnFinish"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#FFF"
+        android:text="@string/finish_button"
+        android:textAllCaps="true"
+        android:textColor="@color/design_default_color_primary"
+        android:textStyle="bold" />
+
+
+</LinearLayout>
