@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory app:title="@string/settings_section_1_title">
+        <DropDownPreference
+            app:entries="@array/rest_time_entries"
+            app:entryValues="@array/rest_time_values"
+            app:icon="@drawable/settings_coffee"
+            app:key="restTime"
+            app:title="@string/settings_rest_time"
+            app:useSimpleSummaryProvider="true" />
+        <SwitchPreferenceCompat
+            app:defaultValue="true"
+            app:icon="@drawable/settings_phone_screen"
+            app:key="keepScreenOn"
+            app:title="@string/settings_keep_screen_on" />
+        <ListPreference
+            app:entries="@array/languages_entries"
+            app:entryValues="@array/languages_values"
+            app:icon="@drawable/settings_language"
+            app:key="changeLanguage"
+            app:title="@string/settings_language"
+            app:useSimpleSummaryProvider="true" />
+        <Preference
+            app:icon="@drawable/settings_clear_data"
+            app:key="deleteData"
+            app:title="@string/settings_clear_data" />
+    </PreferenceCategory>
+</PreferenceScreen>

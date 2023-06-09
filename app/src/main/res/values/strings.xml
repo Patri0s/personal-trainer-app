@@ -89,4 +89,12 @@
     <string name="summary_trainings">Done\ntrainings</string>
     <string name="summary_kcal">Kcal\nburnt</string>
     <string name="summary_minutes">Minutes\nspent</string>
+    <string name="settings_english">English</string>
+    <string name="settings_polish">Polish</string>
+    <string name="settings_section_1_title">General settings</string>
+    <string name="settings_rest_time">Rest time between exercises</string>
+    <string name="settings_keep_screen_on">Keep the screen on</string>
+    <string name="settings_language">Change language</string>
+    <string name="settings_clear_data">Clear app data</string>
+    <string name="settings_delete_toast">App data successfully deleted</string>
 </resources>
