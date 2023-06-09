@@ -73,4 +73,20 @@
     <string name="finish_congratulations">Congratulations!</string>
     <string name="finish_congrats_desc">You have completed all the exercises</string>
     <string name="finish_button">Finish</string>
+    <string name="bmi_scale">BMI SCALE</string>
+    <string name="bmi_underweight">Underweight</string>
+    <string name="bmi_normal">Normal</string>
+    <string name="bmi_overweight">Overweight</string>
+    <string name="bmi_obese">Obese</string>
+    <string name="bmi_extreme_obese">Extreme Obese</string>
+    <string name="bmi_invalid_value">Invalid BMI value</string>
+    <string name="bmi_invalid_toast">Please enter valid values</string>
+    <string name="bmi_edit">Edit</string>
+    <string name="bmi_weight">Weight</string>
+    <string name="bmi_height">Height</string>
+    <string name="bmi_save">Save</string>
+    <string name="bmi_cancel">Cancel</string>
+    <string name="summary_trainings">Done\ntrainings</string>
+    <string name="summary_kcal">Kcal\nburnt</string>
+    <string name="summary_minutes">Minutes\nspent</string>
 </resources>
