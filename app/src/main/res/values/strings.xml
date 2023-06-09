@@ -4,12 +4,6 @@
     <string name="nav_home">Exercise plans</string>
     <string name="nav_summary">Summary</string>
     <string name="nav_settings">Settings</string>
-    <string name="home_title">Good Morning!</string>
-    <string name="feeling_section_title">How are you</string>
-    <string name="feeling_section_title_bold">" feeling today?"</string>
-    <string name="feeling_ready">Ready</string>
-    <string name="feeling_normal">Normal</string>
-    <string name="feeling_tired">Tired</string>
     <string name="section_desc_trainings">%1$d trainings</string>
     <string name="section_time">%1$d minutes</string>
     <string name="section_1_title">ABS</string>
@@ -17,6 +11,13 @@
     <string name="section_3_title">Arms</string>
     <string name="section_4_title">Legs</string>
     <string name="section_5_title">Shoulders and back</string>
+    <string name="settings_delete_toast">App data successfully deleted</string>
+    <string name="home_title">Good Morning!</string>
+    <string name="feeling_section_title">How are you</string>
+    <string name="feeling_section_title_bold">" feeling today?"</string>
+    <string name="feeling_ready">Ready</string>
+    <string name="feeling_normal">Normal</string>
+    <string name="feeling_tired">Tired</string>
     <string name="exercise_section_title">Exercise sections</string>
     <string name="exercise_section_start_button">Start</string>
     <string name="exercise_section_image_content_desc">Section Image</string>
@@ -25,6 +26,13 @@
     <string name="exercise_section_timer_content_desc">White timer icon</string>
     <string name="exercise_section_time" translatable="false">00:%1$d</string>
     <string name="exercise_section_time_1" translatable="false">01:0%1$d</string>
+    <string name="settings_english">English</string>
+    <string name="settings_polish">Polish</string>
+    <string name="settings_section_1_title">General settings</string>
+    <string name="settings_rest_time">Rest time between exercises</string>
+    <string name="settings_keep_screen_on">Keep the screen on</string>
+    <string name="settings_language">Change language</string>
+    <string name="settings_clear_data">Clear app data</string>
     <string name="exercise_1_desc">Description</string>
     <string name="exercise_jumping_jacks_desc">Jump to a position with legs spread wide and hands touching above the head, then return to a position with legs together and arms at the sides of the body.\n\nThis exercise provides a full-body workout and engages all major muscle groups.</string>
     <string name="exercise_reverse_crunches_desc">Lying on your back with your knees raised and bent at a right angle, lift your lower back.\n\nIt mainly works the abdominal muscles: straight and oblique.</string>
@@ -59,16 +67,6 @@
     <string name="exercise_knee_push_ups_desc">Place your knees on the floor, palms below your shoulders and cross your feet.\n\nKeeping your back straight, start bending your elbows until your chest almost touches the floor. Stop and return to the starting position. Repeat until the series is complete.</string>
     <string name="exercise_arm_swings_desc">Stand straight with your knees slightly bent, feet shoulder-width apart and arms extended horizontally to the sides.\n\nCross your arms in front, then quickly pull them back as far as possible. Repeat this movement back and forth until the series is complete.</string>
     <string name="exercise_cat_cow_pose_desc">Start in forward support, with your knees under your hips and your hands exactly under your shoulders.\n\nInhaling, push your belly down, shoulders back, and head up.\n\nMaking an exhalation, push your back up and bend your head down. Repeat the exercise.</string>
-    <string name="working_half_time">Half time remaining</string>
-    <string name="working_get_ready">Get Ready</string>
-    <string name="working_work">Work!</string>
-    <string name="working_icon_info">Exercise info icon</string>
-    <string name="working_icon_pause">Exercise pause icon</string>
-    <string name="working_icon_resume">Exercise resume icon</string>
-    <string name="back_dialog_title">Are you sure?</string>
-    <string name="back_dialog_desc">This will stop your workout. You\'ve come this far, are you sure you want to quit?</string>
-    <string name="back_dialog_yes">Yes</string>
-    <string name="back_dialog_no">No</string>
     <string name="trophy_desc">Trophy icon</string>
     <string name="finish_congratulations">Congratulations!</string>
     <string name="finish_congrats_desc">You have completed all the exercises</string>
@@ -89,12 +87,14 @@
     <string name="summary_trainings">Done\ntrainings</string>
     <string name="summary_kcal">Kcal\nburnt</string>
     <string name="summary_minutes">Minutes\nspent</string>
-    <string name="settings_english">English</string>
-    <string name="settings_polish">Polish</string>
-    <string name="settings_section_1_title">General settings</string>
-    <string name="settings_rest_time">Rest time between exercises</string>
-    <string name="settings_keep_screen_on">Keep the screen on</string>
-    <string name="settings_language">Change language</string>
-    <string name="settings_clear_data">Clear app data</string>
-    <string name="settings_delete_toast">App data successfully deleted</string>
+    <string name="working_half_time">Half time remaining</string>
+    <string name="working_get_ready">Get Ready</string>
+    <string name="working_work">Work!</string>
+    <string name="back_dialog_title">Are you sure?</string>
+    <string name="back_dialog_desc">This will stop your workout. You\'ve come this far, are you sure you want to quit?</string>
+    <string name="back_dialog_yes">Yes</string>
+    <string name="back_dialog_no">No</string>
+    <string name="working_icon_info">Exercise info icon</string>
+    <string name="working_icon_pause">Exercise pause icon</string>
+    <string name="working_icon_resume">Exercise resume icon</string>
 </resources>
