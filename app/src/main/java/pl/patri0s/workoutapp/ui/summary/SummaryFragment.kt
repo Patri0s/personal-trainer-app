@@ -1,14 +1,12 @@
 package pl.patri0s.workoutapp.ui.summary
 
 import android.app.Dialog
-import android.content.Context
 import android.graphics.Color
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
@@ -31,13 +29,6 @@ class SummaryFragment : Fragment() {
 
     private val binding get() = _binding!!
 
-    private lateinit var activity: AppCompatActivity
-
-    override fun onAttach(context: Context) {
-        super.onAttach(context)
-        activity = context as AppCompatActivity
-    }
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -45,8 +36,6 @@ class SummaryFragment : Fragment() {
     ): View {
         _binding = FragmentSummaryBinding.inflate(inflater, container, false)
         val root: View = binding.root
-
-        activity.supportActionBar?.subtitle = getString(R.string.nav_summary)
 
         val summaryDao = (requireActivity().application as WorkOutApp).db.summaryDao()
         setAllSummaryData(summaryDao)
@@ -65,22 +54,27 @@ class SummaryFragment : Fragment() {
                             bmiLabel = R.string.bmi_underweight
                             bmiColor = R.color.bmi_underweight
                         }
+
                         in 18.5f..24.9f -> {
                             bmiLabel = R.string.bmi_normal
                             bmiColor = R.color.bmi_normal
                         }
+
                         in 25f..29.9f -> {
                             bmiLabel = R.string.bmi_overweight
                             bmiColor = R.color.bmi_overweight
                         }
+
                         in 30.0f..34.9f -> {
                             bmiLabel = R.string.bmi_obese
                             bmiColor = R.color.bmi_obese
                         }
+
                         in 35.0f..100.0f -> {
                             bmiLabel = R.string.bmi_extreme_obese
                             bmiColor = R.color.bmi_extreme_obese
                         }
+
                         else -> {
                             bmiLabel = R.string.bmi_invalid_value
                         }
