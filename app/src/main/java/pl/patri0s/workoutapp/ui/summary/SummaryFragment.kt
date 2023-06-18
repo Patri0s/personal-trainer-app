@@ -120,12 +120,12 @@ class SummaryFragment : Fragment() {
         }
     }
 
-    private fun validateMetricUnits(dialogBinding: DialogBmiBinding): Boolean {
+    fun validateMetricUnits(dialogBinding: DialogBmiBinding?): Boolean {
         var isValid = true
 
-        if (dialogBinding.weightValue.text.toString().isEmpty()) {
+        if (dialogBinding?.weightValue?.text.toString().isEmpty()) {
             isValid = false
-        } else if (dialogBinding.heightValue.text.toString().isEmpty()) {
+        } else if (dialogBinding?.heightValue?.text.toString().isEmpty()) {
             isValid = false
         }
 

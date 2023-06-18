@@ -67,12 +67,13 @@ class WorkingActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
 
         val sectionAdapter = SectionAdapter(SectionList.sectionsList)
 
-        when (sectionAdapter.getItemClickedId()) {
-            0 -> exerciseList = ExerciseList.section1ExerciseList
-            1 -> exerciseList = ExerciseList.section2ExerciseList
-            2 -> exerciseList = ExerciseList.section3ExerciseList
-            3 -> exerciseList = ExerciseList.section4ExerciseList
-            4 -> exerciseList = ExerciseList.section5ExerciseList
+        exerciseList = when (sectionAdapter.getItemClickedId()) {
+            0 -> ExerciseList.section1ExerciseList
+            1 -> ExerciseList.section2ExerciseList
+            2 -> ExerciseList.section3ExerciseList
+            3 -> ExerciseList.section4ExerciseList
+            4 -> ExerciseList.section5ExerciseList
+            else -> ExerciseList.section1ExerciseList
         }
 
         tts = TextToSpeech(this, this, "com.google.android.tts")
