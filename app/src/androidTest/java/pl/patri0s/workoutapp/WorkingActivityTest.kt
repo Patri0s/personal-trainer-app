@@ -10,6 +10,7 @@ import junit.framework.TestCase
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
+import pl.patri0s.workoutapp.activities.WorkingActivity
 
 
 @RunWith(AndroidJUnit4::class)

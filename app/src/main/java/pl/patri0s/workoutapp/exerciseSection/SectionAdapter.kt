@@ -5,7 +5,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import pl.patri0s.workoutapp.R
-import pl.patri0s.workoutapp.SectionExerciseActivity
+import pl.patri0s.workoutapp.activities.SectionExerciseActivity
 import pl.patri0s.workoutapp.databinding.ItemExerciseSectionBinding
 
 private var itemClickedId: Int? = null

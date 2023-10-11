@@ -1,4 +1,4 @@
-package pl.patri0s.workoutapp
+package pl.patri0s.workoutapp.activities
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -7,6 +7,7 @@ import android.os.Handler
 import android.os.Looper
 import android.view.animation.AnimationUtils
 import androidx.appcompat.app.AppCompatActivity
+import pl.patri0s.workoutapp.R
 import pl.patri0s.workoutapp.databinding.ActivitySplashscreenBinding
 
 @SuppressLint("CustomSplashScreen")

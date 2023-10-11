@@ -1,4 +1,4 @@
-package pl.patri0s.workoutapp
+package pl.patri0s.workoutapp.activities
 
 import android.icu.text.SimpleDateFormat
 import android.media.MediaPlayer
@@ -8,6 +8,7 @@ import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.launch
+import pl.patri0s.workoutapp.R
 import pl.patri0s.workoutapp.database.SummaryDao
 import pl.patri0s.workoutapp.database.SummaryEntity
 import pl.patri0s.workoutapp.database.WorkOutApp

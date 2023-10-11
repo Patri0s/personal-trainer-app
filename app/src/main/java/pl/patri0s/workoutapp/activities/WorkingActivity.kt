@@ -1,4 +1,4 @@
-package pl.patri0s.workoutapp
+package pl.patri0s.workoutapp.activities
 
 import android.annotation.SuppressLint
 import android.app.Dialog
@@ -15,6 +15,7 @@ import androidx.activity.addCallback
 import androidx.appcompat.app.AppCompatActivity
 import androidx.preference.PreferenceManager
 import androidx.recyclerview.widget.GridLayoutManager
+import pl.patri0s.workoutapp.R
 import pl.patri0s.workoutapp.databinding.ActivityWorkingBinding
 import pl.patri0s.workoutapp.databinding.DialogCustomBackConfirmationBinding
 import pl.patri0s.workoutapp.databinding.DialogExerciseInfoBinding

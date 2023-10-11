@@ -1,4 +1,4 @@
-# Projekt zaliczeniowy
+# Aplikcja Trener Personalny
 
 Aplikacja Trener Personalny daje użytkownikowi możliwość zrealizowania treningu na każdą partię ciała w dowolnym miejscu i czasie. Z uwagi na jej wielofunkcyjność istnieje możliwość dostosowania przerw między ćwiczeniami, co jest ważne na początku przygody z treningami. Możemy również na bieżąco śledzić nasze postępy, dzięki sekcji z podsumowaniem. Dodatkowo funkcja zmiany języka oraz motywu aplikacji z pewnością ułatwia jej użytkowanie. Poniżej znajduje się dokładne omówienie najważniejszych funkcjonalności aplikacji.
 

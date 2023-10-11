@@ -1,9 +1,10 @@
-package pl.patri0s.workoutapp
+package pl.patri0s.workoutapp.activities
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
+import pl.patri0s.workoutapp.R
 import pl.patri0s.workoutapp.databinding.ActivitySectionExerciseBinding
 import pl.patri0s.workoutapp.databinding.FragmentHomeBinding
 import pl.patri0s.workoutapp.exercise.ExerciseAdapter
